@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Teste_Geral
+namespace Lendo_XML
 {
-    public partial class Form1 : Form
+    public partial class Lendo_XML : Form
     {
 
-        public Form1()
+        public Lendo_XML()
         {
             InitializeComponent();
             //SomaDeValores();
@@ -56,7 +56,7 @@ namespace Teste_Geral
 
         private void LerArquivoXML()
         {
-            var arquivo = @"C:\Users\elielson\nfe.xml";
+            var arquivo = @"C:\Users\elielson\nfe.xml";//arquivo desejado
             var item = "";
             var cProd = "";
             var xprod = "";

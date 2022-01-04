@@ -1,6 +1,6 @@
-﻿namespace Teste_Geral
+﻿namespace Lendo_XML
 {
-    partial class Form1
+    partial class Lendo_XML
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lendo_XML));
             this.label1 = new System.Windows.Forms.Label();
             this.lblContador = new System.Windows.Forms.Label();
             this.listArquivos = new System.Windows.Forms.ListView();
+            this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.descricao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.qtde = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.unitario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.valor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnAbrixXML = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtOp = new System.Windows.Forms.TextBox();
@@ -41,12 +47,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.descricao = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.qtde = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.unitario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.valor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -80,85 +80,10 @@
             this.listArquivos.HideSelection = false;
             this.listArquivos.Location = new System.Drawing.Point(12, 109);
             this.listArquivos.Name = "listArquivos";
-            this.listArquivos.Size = new System.Drawing.Size(776, 275);
+            this.listArquivos.Size = new System.Drawing.Size(772, 275);
             this.listArquivos.TabIndex = 3;
             this.listArquivos.UseCompatibleStateImageBehavior = false;
             this.listArquivos.View = System.Windows.Forms.View.Details;
-            // 
-            // btnAbrixXML
-            // 
-            this.btnAbrixXML.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrixXML.Image")));
-            this.btnAbrixXML.Location = new System.Drawing.Point(736, 390);
-            this.btnAbrixXML.Name = "btnAbrixXML";
-            this.btnAbrixXML.Size = new System.Drawing.Size(52, 50);
-            this.btnAbrixXML.TabIndex = 4;
-            this.btnAbrixXML.UseVisualStyleBackColor = true;
-            this.btnAbrixXML.Click += new System.EventHandler(this.btnAbrixXML_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Op:";
-            // 
-            // txtOp
-            // 
-            this.txtOp.Location = new System.Drawing.Point(69, 7);
-            this.txtOp.Name = "txtOp";
-            this.txtOp.Size = new System.Drawing.Size(285, 20);
-            this.txtOp.TabIndex = 6;
-            // 
-            // txtNF
-            // 
-            this.txtNF.Location = new System.Drawing.Point(69, 35);
-            this.txtNF.Name = "txtNF";
-            this.txtNF.Size = new System.Drawing.Size(486, 20);
-            this.txtNF.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "NFe:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(69, 63);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(486, 20);
-            this.txtEmail.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Email:";
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(325, 390);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(87, 20);
-            this.txtTotal.TabIndex = 12;
-            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(289, 390);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Valor:";
             // 
             // item
             // 
@@ -193,11 +118,89 @@
             this.valor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.valor.Width = 120;
             // 
-            // Form1
+            // btnAbrixXML
+            // 
+            this.btnAbrixXML.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrixXML.Image")));
+            this.btnAbrixXML.Location = new System.Drawing.Point(736, 390);
+            this.btnAbrixXML.Name = "btnAbrixXML";
+            this.btnAbrixXML.Size = new System.Drawing.Size(52, 50);
+            this.btnAbrixXML.TabIndex = 4;
+            this.btnAbrixXML.UseVisualStyleBackColor = true;
+            this.btnAbrixXML.Click += new System.EventHandler(this.btnAbrixXML_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(43, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Op:";
+            // 
+            // txtOp
+            // 
+            this.txtOp.Location = new System.Drawing.Point(69, 7);
+            this.txtOp.Name = "txtOp";
+            this.txtOp.ReadOnly = true;
+            this.txtOp.Size = new System.Drawing.Size(285, 20);
+            this.txtOp.TabIndex = 6;
+            // 
+            // txtNF
+            // 
+            this.txtNF.Location = new System.Drawing.Point(69, 35);
+            this.txtNF.Name = "txtNF";
+            this.txtNF.ReadOnly = true;
+            this.txtNF.Size = new System.Drawing.Size(486, 20);
+            this.txtNF.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "NFe:";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(69, 63);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(486, 20);
+            this.txtEmail.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Data:";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(325, 390);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(87, 20);
+            this.txtTotal.TabIndex = 12;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(289, 390);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Valor:";
+            // 
+            // Lendo_XML
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtEmail);
@@ -210,8 +213,9 @@
             this.Controls.Add(this.listArquivos);
             this.Controls.Add(this.lblContador);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "Lendo_XML";
+            this.Text = "Fazendo Leitura de XML";
             this.ResumeLayout(false);
             this.PerformLayout();
 
