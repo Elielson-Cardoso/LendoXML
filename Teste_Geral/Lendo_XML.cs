@@ -56,7 +56,7 @@ namespace Lendo_XML
 
         private void LerArquivoXML()
         {
-            var arquivo = @"C:\Users\elielson\nfe.xml";//arquivo desejado
+            var arquivo = @"C:\Users\eliel\nfe.xml";//arquivo desejado
             var item = "";
             var cProd = "";
             var xprod = "";
